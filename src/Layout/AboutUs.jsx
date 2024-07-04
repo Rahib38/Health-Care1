@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="mt-5 space-y-5">
       <button className="p-2 px-4 rounded-2xl border-2">Testimonial</button>
       <h1 className="text-3xl font-semibold">What they say about us</h1>
       <div className="flex gap-4 ">

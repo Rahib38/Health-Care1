@@ -1,5 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
-
+import img from "../../public/logo dark.png";
 const Navbar = () => {
      
     return (
@@ -46,7 +46,7 @@ const Navbar = () => {
               </ul>
             </div>
             <a className="btn btn-ghost text-xl">
-              <img src="../../public/logo dark.png" alt="" />
+              <img src={img} alt="" />
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">

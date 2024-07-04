@@ -1,11 +1,11 @@
-
+import img from "../../public/logo light.png";
 const Footer = () => {
     return (
       <div className="mt-5">
         <footer className="footer bg-[#291a7c]  p-10 text-white">
           <aside>
             <a className="btn btn-ghost text-xl">
-              <img src="../../public/logo light.png" alt="" />
+              <img src={img} alt="" />
             </a>
             <p>
               ACME Industries Ltd.

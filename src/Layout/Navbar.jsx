@@ -1,22 +1,6 @@
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-     const navlinks = (
-       <>
-         <li>
-           <NavLink to="/"> Home</NavLink>
-         </li>
-         <li>
-           <NavLink to="">Service</NavLink>
-         </li>
-         <li>
-           <NavLink to=""> Blog</NavLink>
-         </li>
-         <li>
-           <NavLink to="">About us</NavLink>
-         </li>
-       </>
-     );
+     
     return (
       <div>
         <div className="navbar bg-base-100">
@@ -46,16 +30,45 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                {navlinks}
+                <li>
+                  <a>Home</a>
+                </li>
+                <li>
+                  <a>Services</a>
+                </li>
+                <li>
+                  <a>Blog</a>
+                </li>
+                <li>
+                  <a>About Us</a>
+                </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl"><img src="../../public/logo dark.png" alt="" /></a>
+            <a className="btn btn-ghost text-xl">
+              <img src="../../public/logo dark.png" alt="" />
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{navlinks }</ul>
+            <ul className="menu menu-horizontal px-1">
+              {" "}
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Services</a>
+              </li>
+              <li>
+                <a>Blog</a>
+              </li>
+              <li>
+                <a>About Us</a>
+              </li>
+            </ul>
           </div>
           <div className="navbar-end">
-            <button className="p-2 px-4 rounded-2xl border-2">Appointment</button>
+            <button className="p-2 px-4 rounded-2xl border-2">
+              Appointment
+            </button>
           </div>
         </div>
       </div>
